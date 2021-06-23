@@ -1,0 +1,11 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+.userInfo-name {
+  margin-left: 8px;
+}
+.userInfo-name .uid {
+  color: #BDBDBD;
+  margin-left: 8px;
+}

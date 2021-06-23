@@ -1,0 +1,35 @@
+nav {
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #fff;
+}
+ul .nav-wrap {
+  display: flex;
+  margin-right: 48px;
+}
+li {
+  margin-left: 24px;
+}
+li a {
+  text-decoration: none;
+}
+li.logo {
+  display: flex;
+  align-items: center;
+}
+li.logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+li.logo span {
+  margin-left: 16px;
+  font-size: 18px;
+  font-family: 'Fira Code';
+}

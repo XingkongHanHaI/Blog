@@ -1,0 +1,11 @@
+.userList {
+  background-color: #00BCD4;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 32px;
+  padding: 8px 24px;
+}
+.userList div {
+  margin: 12px 0;
+}
