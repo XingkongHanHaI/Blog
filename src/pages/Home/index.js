@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import homeUrl from "../../images/home.svg";
+import homeUrl from "../../assets/images/home.svg";
 export default class HomePage extends React.Component {
   render() {
     return (

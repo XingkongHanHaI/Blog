@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoUrl from "../../images/logo.jpg";
+import logoUrl from "../../assets/images/logo.jpg";
 import "./index.scss";
 export default class Nav extends React.Component {
   render() {

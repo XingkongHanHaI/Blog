@@ -1,5 +1,5 @@
 import Nav from "./components/Nav";
-import HomePage from "./components/Home";
+import Home from "./pages/Home";
 import Article from "./components/Article";
 import {
   BrowserRouter as Router,
@@ -38,7 +38,7 @@ function App() {
             <Route path="/comment">
             </Route>
             <Route path="/">
-              <HomePage />
+              <Home />
             </Route>
           </Switch>
         </div>
