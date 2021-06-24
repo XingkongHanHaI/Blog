@@ -1,0 +1,26 @@
+.home {
+  color: #fff;
+  padding: 62px 136px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+  &-intro {
+    flex: 1;
+    h1 {
+      margin-top: 36px;
+      font-size: 36px;
+      color: #d7e4e3;
+    }
+    .improving {
+      font-size: 24px;
+      font-weight: 500;
+      color: #f7df1e;
+    }
+  }
+  &-logo {
+    img {
+      width: 680px;
+    }
+  }
+}

@@ -1,11 +1,6 @@
-import Nav from "./components/Nav/Nav";
-import HomePage from "./components/HomePage/HomgPage";
-import Input from "./components/Form/Input";
-import Comment from './components/Comment/Comment';
-import Clock from './components/Clock/Clock';
-import UserList from './components/UserList/UserList';
-import Article from "./components/Article/Article";
-import { useState } from "react";
+import Nav from "./components/Nav";
+import HomePage from "./components/Home";
+import Article from "./components/Article";
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,14 +8,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-  // 评论模块s
-  const [commentLists, setComment] = useState([]);
-  const addComment = (commnetArticle) => {
-    setComment([
-      ...commentLists,
-      commnetArticle
-    ]);
-  }
   let articleLists = [
     {
       articleLogoUrl: "http://iph.href.lu/320x260",
@@ -38,21 +25,17 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="nav">
+        <nav>
           <Nav />
-        </div>
+        </nav>
         <div className="content">
           <Switch>
             <Route path="/lifePhoto">
-              <UserList></UserList>
             </Route>
             <Route path="/docs">
               <Article articleLists={articleLists} />
             </Route>
             <Route path="/comment">
-              <Input createComment={addComment} />
-              <Comment comments={commentLists}></Comment>
-              <Clock></Clock>
             </Route>
             <Route path="/">
               <HomePage />
