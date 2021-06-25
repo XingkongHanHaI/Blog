@@ -27,6 +27,13 @@
       "unicode_decimal": 59911
     },
     {
+      "icon_id": "12193575",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "ebe6",
+      "unicode_decimal": 60390
+    },
+    {
       "icon_id": "21213246",
       "name": "github",
       "font_class": "github",

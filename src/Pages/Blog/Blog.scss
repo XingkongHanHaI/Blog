@@ -1,4 +1,6 @@
 .blog {
+  background-color: rgba($color: #f2f4f8, $alpha: 0.4);
+  height: 100%;
   &-logo {
     position: relative;
     z-index: -1;
@@ -14,7 +16,21 @@
       transform: translate(-50%, -50%);
       font-size: 48px;
       text-align: center;
-      color: #645769;
+      color: #231f25;
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 64px;
+    .blog-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 48px;
+      margin-bottom: 64px;
     }
   }
 }
