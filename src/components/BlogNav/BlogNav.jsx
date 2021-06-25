@@ -5,11 +5,15 @@ export default class BlogNav extends React.Component {
   render() {
     return (
       <aside className="blog-nav">
-        <p>Tags</p>
+        <p>Article Tags</p>
         <div className="tag-list">
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
+          {
+            this.props.tags.map(tagsItem => {
+              return (
+                <span className="tag" style={{ backgroundColor: tagsItem.tagColor }}>{tagsItem.tagName}</span>
+              )
+            })
+          }
         </div>
       </aside>
     )

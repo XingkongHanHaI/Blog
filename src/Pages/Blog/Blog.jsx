@@ -12,7 +12,10 @@ export default class Home extends React.Component {
           blogTitle: "一文解决JavaScript数据类型及转换",
           blogAbstract: "在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有v",
           blogCreateTime: "2020-01-02",
-          blogTags: "javascript",
+          blogTag: {
+            tagName: "JavaScript",
+            tagColor: "#d1b514"
+          },
           blogView: {
             views: 0,
             loves: 0
@@ -23,7 +26,10 @@ export default class Home extends React.Component {
           blogTitle: "一文解决JavaScript数据类型及转换",
           blogAbstract: "在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有v",
           blogCreateTime: "2020-01-02",
-          blogTags: "html",
+          blogTag: {
+            tagName: "CSS",
+            tagColor: "#264de4"
+          },
           blogView: {
             views: 0,
             loves: 0
@@ -34,11 +40,40 @@ export default class Home extends React.Component {
           blogTitle: "一文解决JavaScript数据类型及转换",
           blogAbstract: "在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有在javaScript中类型有v",
           blogCreateTime: "2020-01-02",
-          blogTags: "html",
+          blogTag: {
+            tagName: "HTML",
+            tagColor: "#e44d2c"
+          },
           blogView: {
             views: 0,
             loves: 0
           }
+        }
+      ],
+      tags: [
+        {
+          tagName: "HTML",
+          tagColor: "#e44d2c"
+        },
+        {
+          tagName: "CSS",
+          tagColor: "#264de4"
+        },
+        {
+          tagName: "JavaScript",
+          tagColor: "#d1b514"
+        },
+        {
+          tagName: "Vue",
+          tagColor: "#41b883"
+        },
+        {
+          tagName: "React",
+          tagColor: "#07aedc"
+        },
+        {
+          tagName: "WebPack",
+          tagColor: "#75afcc"
         }
       ]
     }
@@ -52,8 +87,8 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div className="blog-container">
-          <BlogNav />
-            <div className="blog-content">
+          <BlogNav tags={this.state.tags} />
+          <div className="blog-content">
             <BlogCard blogLists={this.state.blogLists} />
           </div>
         </div>

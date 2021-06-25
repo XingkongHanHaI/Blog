@@ -13,7 +13,7 @@ export default class BlogCard extends React.Component {
               <h3>{blogItem.blogTitle}</h3>
               <div className="tag-date">
                 <span className="date">{blogItem.blogCreateTime}</span>
-                <span className="tag">{blogItem.blogTags}</span>
+                <span className="tag" style={{ backgroundColor: blogItem.blogTag.tagColor }}>{blogItem.blogTag.tagName}</span>
               </div>
               <div className="abstract">
                 <p>{blogItem.blogAbstract}</p>

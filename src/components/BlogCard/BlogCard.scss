@@ -2,8 +2,9 @@
   width: 940px;
   height: 320px;
   border-radius: 8px;
-  background: rgba($color: #aeb1d6, $alpha: 0.4);
+  background: #f7f8fb;
   display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(201, 193, 193, 0.19);
   &:not(:first-child) {
     margin-top: 32px;
   }
