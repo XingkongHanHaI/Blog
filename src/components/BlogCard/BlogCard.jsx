@@ -1,11 +1,26 @@
 import React from "react";
 import "./BlogCard.scss";
+import { post } from "../../utils/http";
 export default class BlogCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      blogLists: []
+    }
+  }
+  componentDidMount() {
+    post("http://localhost:4000/app/blog/list").then(res => {
+      console.log(res);
+      this.setState({
+        blogLists: res.data
+      });
+    })
+  }
   render() {
     return (
-      this.props.blogLists.map(blogItem => {
+      this.state.blogLists.map(blogItem => {
         return (
-          <section className="blog-card">
+          <section className="blog-card" key={blogItem.blogTitle}>
             <div className="blog-card-aside">
               <img src={blogItem.blogLogoUrl} alt="" />
             </div>
